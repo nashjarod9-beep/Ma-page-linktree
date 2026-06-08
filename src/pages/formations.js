@@ -77,13 +77,13 @@ function renderFormationCard(f) {
         <div class="formation-card-number">${f.number}</div>
         <h2 class="formation-card-title">${f.title}</h2>
         <div class="formation-card-promise">
-          ${icons.target} ${f.promise}
+          ${icons.target} <span>${f.promise}</span>
         </div>
       </div>
 
       <div class="formation-card-body">
         <p class="formation-card-desc">${f.description}</p>
-        ${f.bonus ? `<div class="formation-card-bonus">${icons.gift} ${f.bonus}</div>` : ''}
+        ${f.bonus ? `<div class="formation-card-bonus">${icons.gift} <span>${f.bonus}</span></div>` : ''}
       </div>
 
       ${f.price || f.originalPrice ? `
@@ -121,6 +121,12 @@ export function renderFormationsPage() {
       <!-- Formation Cards -->
       <div class="formation-cards">
         ${formations.map(f => renderFormationCard(f)).join('')}
+      </div>
+
+      <!-- Support Note -->
+      <div class="info-box stagger-item" style="margin-top: var(--spacing-xl);">
+        ${icons.whatsapp}
+        <span><strong>Suivi personnalisé :</strong> À la fin de chaque formation, tu pourras être suivi sur WhatsApp où nous répondrons à toutes tes questions pour t'aider à réussir.</span>
       </div>
 
       ${renderFooter()}
