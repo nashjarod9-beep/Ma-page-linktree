@@ -100,9 +100,9 @@ export function renderAccompagnementGroupe() {
       </div>
 
       <!-- Engagement note -->
-      <div class="engagement-note stagger-item">
-        <strong>⚠️ En t'engageant, tu t'engages pour tout le programme :</strong><br/>
-        tu ne choisis pas les sessions, tu participes à toutes.
+      <div class="engagement-note stagger-item" style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+        <div style="min-width: 16px; margin-top: 2px;">${icons.info}</div>
+        <span>Si tu as du mal à accéder au groupe WhatsApp, écris sur le numéro WhatsApp que j'ai laissé dans mon profil TikTok.</span>
       </div>
 
       <!-- CTA -->
