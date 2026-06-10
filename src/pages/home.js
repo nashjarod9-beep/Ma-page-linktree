@@ -52,7 +52,7 @@ export function renderHomePage() {
           </div>
           <div class="main-btn-content">
             <span class="main-btn-label">Mes Formations</span>
-            <span class="main-btn-sub">Accède à toutes mes formations premium</span>
+            <span class="main-btn-sub">100% pratiques et déjà enregistrées en vidéo</span>
           </div>
           <span class="main-btn-arrow">${icons.arrowRight}</span>
         </a>

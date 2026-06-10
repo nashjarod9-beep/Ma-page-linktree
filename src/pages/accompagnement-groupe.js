@@ -10,15 +10,68 @@ export function renderAccompagnementGroupe() {
       <!-- Header -->
       <div class="section-header stagger-item">
         <div class="section-badge">
-          ${icons.userGroup} Coaching Collectif
+          ${icons.userGroup} Programme Croissance Accompagnée
         </div>
         <h1 class="section-title">Accompagnement de Groupe</h1>
-        <p class="section-subtitle">Avance avec un groupe motivé et atteins tes objectifs ensemble</p>
+        <p class="section-subtitle">Pour ceux qui ne veulent pas rester seuls mais ne peuvent pas payer le premium</p>
       </div>
 
-      <!-- Description -->
+      <!-- Intro -->
       <div class="content-card stagger-item">
-        <h3>👥 Comment ça fonctionne</h3>
+        <h3>🚀 Tu veux travailler en groupe avec les autres</h3>
+        <p>
+          On construit <strong class="highlight">ensemble</strong> votre système pour acquérir des clients <strong>étape par étape</strong>.
+        </p>
+        <div class="promise-box" style="margin-top: var(--spacing-md); margin-bottom: 0;">
+          <p class="promise-text" style="font-size: 1rem;">
+            Passer d'un vendeur qui n'arrivait pas à faire une seule vente par mois sur ta boutique, à quelqu'un qui génère <span class="promise-amount">100 000 FCFA chaque semaine</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Structure -->
+      <div class="content-card stagger-item">
+        <h3>📦 Structure du programme</h3>
+
+        <div style="margin-bottom: var(--spacing-md);">
+          <h4 style="color: var(--gold-primary); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">🔹 1. Session hebdomadaire</h4>
+          ${renderChecklist([
+            'Stratégie business',
+            'Cours en live',
+            'Correction des erreurs',
+            "Plan d'action concret",
+          ])}
+        </div>
+
+        <div style="margin-bottom: var(--spacing-md);">
+          <h4 style="color: var(--gold-primary); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">🔹 2. Groupe WhatsApp actif</h4>
+          ${renderChecklist([
+            'Support quotidien',
+            'Feedback personnalisé',
+          ])}
+        </div>
+
+        <div style="margin-bottom: var(--spacing-md);">
+          <h4 style="color: var(--gold-primary); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">🔹 3. Analyse business</h4>
+          ${renderChecklist([
+            'Audit de tes pages',
+            'Audit de tes publicités',
+            'Audit de ton tunnel de vente',
+          ])}
+        </div>
+
+        <div>
+          <h4 style="color: var(--gold-primary); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">🔹 4. Exécution guidée</h4>
+          ${renderChecklist([
+            "Ce qu'il faut faire chaque semaine",
+            'Correction et ajustements en direct',
+          ])}
+        </div>
+      </div>
+
+      <!-- Schedule -->
+      <div class="content-card stagger-item">
+        <h3>📅 Comment ça se passe</h3>
         <p>
           Travail <strong class="highlight">en groupe de 10 à 20 personnes</strong>. Tous les participants sont ajoutés dans un <strong>groupe d'accompagnement</strong> où des instructions sont données régulièrement.
         </p>
@@ -35,17 +88,6 @@ export function renderAccompagnementGroupe() {
           ${icons.sparkles}
           <span><strong class="highlight">Première session le 14 juin.</strong> Rejoins le groupe maintenant pour ne pas manquer le départ !</span>
         </div>
-      </div>
-
-      <!-- Programme -->
-      <div class="content-card stagger-item">
-        <h3>📋 Programme (4 sessions)</h3>
-        ${renderChecklist([
-          'Création de la boutique complète',
-          'Création du produit digital rentable',
-          'Configuration des campagnes publicitaires',
-          'Création de contenu sur TikTok pour vendre',
-        ])}
       </div>
 
       <!-- Rules -->
@@ -99,7 +141,7 @@ export function renderAccompagnementGroupe() {
         </div>
       </div>
 
-      <!-- Engagement note -->
+      <!-- Help note -->
       <div class="engagement-note stagger-item" style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
         <div style="min-width: 16px; margin-top: 2px;">${icons.info}</div>
         <span>Si tu as du mal à accéder au groupe WhatsApp, écris sur le numéro WhatsApp que j'ai laissé dans mon profil TikTok.</span>

@@ -1,5 +1,5 @@
 import { icons } from '../icons.js';
-import { renderBackButton, renderMiniProfile, renderFooter } from '../components.js';
+import { renderBackButton, renderMiniProfile, renderFooter, renderChecklist } from '../components.js';
 
 const formations = [
   {
@@ -115,7 +115,32 @@ export function renderFormationsPage() {
           ${icons.bookOpen} Catalogue
         </div>
         <h1 class="section-title">Mes Formations</h1>
-        <p class="section-subtitle">Des formations pensées pour te faire passer de 0 à rentable, même en partant de zéro</p>
+        <p class="section-subtitle">Des formations 100% pratiques et déjà enregistrées en vidéo</p>
+      </div>
+
+      <!-- Intro -->
+      <div class="content-card stagger-item">
+        <h3>🎬 Pour les entrepreneurs qui veulent apprendre seuls</h3>
+        <p>
+          Pour les entrepreneurs qui veulent <strong class="highlight">apprendre et tester seuls</strong> sans avoir un énorme budget. Chaque formation est en vidéo et te montre <strong>étape par étape</strong> comment faire pour te lancer.
+        </p>
+        <div class="promise-box" style="margin-top: var(--spacing-md); margin-bottom: 0;">
+          <p class="promise-text" style="font-size: 1rem;">
+            « Apprenez à générer vos premiers clients en ligne avec la publicité, le contenu et les systèmes digitaux. »
+          </p>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <div class="content-card stagger-item">
+        <h3>📦 Structure des formations</h3>
+        ${renderChecklist([
+          'Chaque formation est <strong>en vidéo</strong>, déjà enregistrée',
+          'Étape par étape — on te montre exactement comment faire',
+          '<strong class="highlight">Tu payes et tu reçois directement en vidéo !</strong>',
+          'À la fin, tu as mon numéro si tu veux poser des questions',
+          'Là où tu as des questions, tu pourras toujours nous écrire',
+        ])}
       </div>
 
       <!-- Formation Cards -->
