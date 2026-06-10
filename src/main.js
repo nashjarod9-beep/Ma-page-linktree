@@ -4,6 +4,7 @@ import { renderHomePage } from './pages/home.js';
 import { renderAccompagnementPrive } from './pages/accompagnement-prive.js';
 import { renderAccompagnementGroupe } from './pages/accompagnement-groupe.js';
 import { renderFormationsPage } from './pages/formations.js';
+import { renderEntreprisesPage } from './pages/entreprises.js';
 
 // Define routes
 const routes = {
@@ -11,6 +12,7 @@ const routes = {
   '#accompagnement-prive': renderAccompagnementPrive,
   '#accompagnement-groupe': renderAccompagnementGroupe,
   '#formations': renderFormationsPage,
+  '#entreprises': renderEntreprisesPage,
 };
 
 // Initialize router

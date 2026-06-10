@@ -56,6 +56,17 @@ export function renderHomePage() {
           </div>
           <span class="main-btn-arrow">${icons.arrowRight}</span>
         </a>
+
+        <a class="main-btn stagger-item" data-route="#entreprises" id="btn-entreprises">
+          <div class="main-btn-icon">
+            ${icons.target}
+          </div>
+          <div class="main-btn-content">
+            <span class="main-btn-label">Pour les Entreprises</span>
+            <span class="main-btn-sub">Système d'acquisition clients pour PME</span>
+          </div>
+          <span class="main-btn-arrow">${icons.arrowRight}</span>
+        </a>
       </nav>
 
       <!-- Social Icons -->

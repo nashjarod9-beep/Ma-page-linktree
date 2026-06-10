@@ -165,39 +165,6 @@ export function renderAccompagnementPrive() {
         Réserver mon accompagnement privé
       </a>
 
-      <!-- ==================== -->
-      <!-- SECTION ENTREPRISES -->
-      <!-- ==================== -->
-      <div class="gold-separator stagger-item" style="margin: var(--spacing-2xl) auto;"></div>
-
-      <div class="section-header stagger-item">
-        <div class="section-badge">
-          ${icons.target} Offre B2B
-        </div>
-        <h1 class="section-title">Pour les Entreprises & P.M.E</h1>
-        <p class="section-subtitle">Système d'Acquisition Clients Entreprise</p>
-      </div>
-
-      <div class="content-card stagger-item">
-        <h3>🏢 Nous travaillons pour vous</h3>
-        <p>
-          Nous travaillons <strong class="highlight">pour vous</strong> et faisons ceci selon votre demande. Voici ce qu'on peut faire pour vous :
-        </p>
-        ${renderChecklist([
-          'Création et gestion de <strong>publicité Meta</strong>',
-          'Création de <strong>contenu marketing</strong>',
-          '<strong class="highlight">Acquisition clients</strong> — stratégie complète',
-          "Création d'<strong>automatisation</strong> pour répondre à vos WhatsApp",
-          'Création de <strong>SaaS</strong> sur-mesure',
-        ])}
-      </div>
-
-      <!-- Portfolio CTA -->
-      <a href="https://mister-jadore-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="cta-button stagger-item" id="cta-portfolio" style="margin-top: var(--spacing-md);">
-        ${icons.sparkles}
-        Voir mon portfolio & mes réalisations
-      </a>
-
       ${renderFooter()}
     </div>
   `;
